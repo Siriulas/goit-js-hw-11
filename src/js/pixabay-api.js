@@ -8,7 +8,7 @@ export function fetchImages(query) {
       if (!res.ok) {
         throw new Error(res.status);
       }
-      console.log(res);
+
       return res.json();
     })
     .then(data => data.hits)
